@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Timbre Automático | WAyNET Servicios</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <header class="header">
+    <div class="container nav-container">
+      <img src="../logo.png" class="logo-header">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html#inicio"          data-es="Inicio"             data-en="Home">Inicio</a></li>
+          <li><a href="../index.html#caracteristicas" data-es="Nuestros servicios" data-en="Our Services">Nuestros servicios</a></li>
+          <li><a href="../index.html#funcionamiento"  data-es="¿Quiénes somos?"   data-en="About Us">¿Quiénes somos?</a></li>
+          <li><a href="../index.html#filosofia"       data-es="Nuestra Filosofía" data-en="Our Philosophy">Nuestra Filosofía</a></li>
+          <li><a href="../index.html#contacto"        data-es="Contáctanos"       data-en="Contact Us">Contáctanos</a></li>
+        </ul>
+      </nav>
+ 
+      <!-- BOTÓN DE IDIOMA -->
+      <div class="lang-switch">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+        <span>|</span>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- HERO DE SECCIÓN -->
+  <section class="hero hero-small">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="subtitulo"
+           data-es="Proyecto destacado"
+           data-en="Featured Project">
+          Proyecto destacado
+        </p>
+        <h1 class="titulo-animado"
+            data-es="Sistema de timbre automático"
+            data-en="Automatic Bell System">
+          Sistema de timbre automático
+        </h1>
+        <p class="descripcion"
+           data-es="Desarrollamos un sistema de timbre inteligente pensado especialmente para instituciones educativas. Programable, preciso y sin intervención manual."
+           data-en="We developed a smart bell system designed especially for educational institutions. Programmable, precise and with no manual intervention.">
+          Desarrollamos un sistema de timbre inteligente pensado especialmente para instituciones educativas. Programable, preciso y sin intervención manual.
+        </p>
+        <a href="../index.html#contacto" class="btn"
+           data-es="Quiero más información"
+           data-en="I want more information">
+          Quiero más información
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- DETALLE DEL SERVICIO -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"
+          data-es="¿Qué lo hace especial?"
+          data-en="What makes it special?">
+        ¿Qué lo hace especial?
+      </h2>
+      <div class="grid">
+ 
+        <div class="card">
+          <h3 data-es="Horarios programables" data-en="Programmable Schedules">
+            Horarios programables
+          </h3>
+          <p class="opc"
+             data-es="Configurá los timbres de entrada, recreo y salida con total precisión. El sistema funciona de forma autónoma todos los días."
+             data-en="Set the entry, recess and exit bells with total precision. The system runs autonomously every day.">
+            Configurá los timbres de entrada, recreo y salida con total precisión. El sistema funciona de forma autónoma todos los días.
+          </p>
+        </div>
+ 
+        <div class="card">
+          <h3 data-es="Sin intervención manual" data-en="No Manual Intervention">
+            Sin intervención manual
+          </h3>
+          <p class="opc"
+             data-es="Una vez configurado, no requiere que nadie lo active. Ideal para reducir distracciones y mejorar la puntualidad escolar."
+             data-en="Once configured, it doesn't require anyone to activate it. Ideal for reducing distractions and improving school punctuality.">
+            Una vez configurado, no requiere que nadie lo active. Ideal para reducir distracciones y mejorar la puntualidad escolar.
+          </p>
+        </div>
+ 
+        <div class="card">
+          <h3 data-es="Fácil de modificar" data-en="Easy to Modify">
+            Fácil de modificar
+          </h3>
+          <p class="opc"
+             data-es="¿Cambió el horario? Actualizá la programación desde una interfaz simple, sin necesidad de conocimientos técnicos."
+             data-en="Did the schedule change? Update the programming from a simple interface, with no technical knowledge required.">
+            ¿Cambió el horario? Actualizá la programación desde una interfaz simple, sin necesidad de conocimientos técnicos.
+          </p>
+        </div>
+ 
+        <div class="card">
+          <h3 data-es="Instalación no invasiva" data-en="Non-invasive Installation">
+            Instalación no invasiva
+          </h3>
+          <p class="opc"
+             data-es="Compatible con la infraestructura eléctrica existente del colegio. No requiere obras ni modificaciones costosas."
+             data-en="Compatible with the school's existing electrical infrastructure. No costly works or modifications required.">
+            Compatible con la infraestructura eléctrica existente del colegio. No requiere obras ni modificaciones costosas.
+          </p>
+        </div>
+ 
+        <div class="card">
+          <h3 data-es="Múltiples zonas" data-en="Multiple Zones">
+            Múltiples zonas
+          </h3>
+          <p class="opc"
+             data-es="Podés configurar distintos horarios para diferentes sectores del establecimiento según las necesidades de cada turno."
+             data-en="You can set different schedules for different areas of the school according to the needs of each shift.">
+            Podés configurar distintos horarios para diferentes sectores del establecimiento según las necesidades de cada turno.
+          </p>
+        </div>
+ 
+        <div class="card">
+          <h3 data-es="Próxima instalación en la zona" data-en="Coming Soon to Your Area">
+            Próxima instalación en la zona
+          </h3>
+          <p class="opc"
+             data-es="Estamos en proceso de instalación en colegios de la región. Contactanos para sumarte a la lista de instituciones interesadas."
+             data-en="We are in the process of installing in schools in the region. Contact us to join the list of interested institutions.">
+            Estamos en proceso de instalación en colegios de la región. Contactanos para sumarte a la lista de instituciones interesadas.
+          </p>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- LLAMADA A LA ACCIÓN -->
+  <section class="section alt">
+    <div class="container contact-box">
+      <h2 class="section-title"
+          data-es="¿Tu institución quiere sumarse?"
+          data-en="Does your institution want to join?">
+        ¿Tu institución quiere sumarse?
+      </h2>
+      <p data-es="Escribinos y te contamos cómo funciona el proceso de instalación y los costos del sistema."
+         data-en="Write to us and we'll explain how the installation process works and the costs of the system.">
+        Escribinos y te contamos cómo funciona el proceso de instalación y los costos del sistema.
+      </p>
+      <a href="https://mail.google.com/mail/?view=cm&to=waynetservicios@gmail.com&su=Consulta desde la web"
+         target="_blank" class="btn-outline"
+         data-es="Contactanos"
+         data-en="Contact Us">
+        Contactanos
+      </a>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p data-es="&copy; 2026 WAyNET Servicios. Todos los derechos reservados."
+       data-en="&copy; 2026 WAyNET Servicios. All rights reserved.">
+      &copy; 2026 WAyNET Servicios. Todos los derechos reservados.
+    </p>
+  </footer>
+ 
+  <script src="../lang.js"></script>
+</body>
+</html>

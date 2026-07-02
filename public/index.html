@@ -10,6 +10,68 @@
  
 <body>
  
+  <!-- NAVBAR -->
+  <header class="header">
+    <div class="container nav-container">
+ 
+      <img src="logo.png" class="logo-header" alt="Logo WAyNET">
+ 
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+ 
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio"          data-es="Inicio"             data-en="Home">Inicio</a></li>
+          <li><a href="#caracteristicas" data-es="Nuestros servicios" data-en="Our Services">Nuestros servicios</a></li>
+          <li><a href="#funcionamiento"  data-es="¿Quiénes somos?"   data-en="About Us">¿Quiénes somos?</a></li>
+          <li><a href="#filosofia"       data-es="Nuestra Filosofía" data-en="Our Philosophy">Nuestra Filosofía</a></li>
+          <li><a href="#contacto"        data-es="Contactanos"       data-en="Contact Us">Contactanos</a></li>
+        </ul>
+      </nav>
+ 
+      <div class="lang-switch">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+        <span>|</span>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+ 
+    </div>
+  </header>
+ 
+ 
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+ 
+        <p class="subtitulo"
+           data-es="Automatización para hogares, empresas y escuelas"
+           data-en="Automation for homes, businesses and schools">
+          Automatización para hogares, empresas y escuelas
+        </p>
+ 
+        <h1 class="titulo-animado"
+            data-es="Soluciones inteligentes en seguridad y automatización."
+            data-en="Smart solutions in security and automation.">
+          Soluciones inteligentes en seguridad y automatización.
+        </h1>
+ 
+        <p class="descripcion"
+           data-es="Instalamos timbres, cámaras y portones automatizados para brindarte mayor control, seguridad y comodidad en tiempo real."
+           data-en="We install smart doorbells, cameras and automated gates to give you greater control, security and real-time convenience.">
+          Instalamos timbres, cámaras y portones automatizados para brindarte mayor control, seguridad y comodidad en tiempo real.
+        </p>
+ 
+        <a href="#contacto" class="btn"
+           data-es="Solicitá tu presupuesto"
+           data-en="Request a Quote">
+          Solicitá tu presupuesto
+        </a>
+ 
+      </div>
+    </div>
+  </section>
+ 
+ 
 <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
 
 <script>
@@ -115,68 +177,6 @@ document.addEventListener("mousemove", (e) => {
   }
 });
 </script>
-  <!-- NAVBAR -->
-  <header class="header">
-    <div class="container nav-container">
- 
-      <img src="logo.png" class="logo-header" alt="Logo WAyNET">
- 
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
- 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#inicio"          data-es="Inicio"             data-en="Home">Inicio</a></li>
-          <li><a href="#caracteristicas" data-es="Nuestros servicios" data-en="Our Services">Nuestros servicios</a></li>
-          <li><a href="#funcionamiento"  data-es="¿Quiénes somos?"   data-en="About Us">¿Quiénes somos?</a></li>
-          <li><a href="#filosofia"       data-es="Nuestra Filosofía" data-en="Our Philosophy">Nuestra Filosofía</a></li>
-          <li><a href="#contacto"        data-es="Contactanos"       data-en="Contact Us">Contactanos</a></li>
-        </ul>
-      </nav>
- 
-      <div class="lang-switch">
-        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
-        <span>|</span>
-        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
-      </div>
- 
-    </div>
-  </header>
- 
- 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
- 
-        <p class="subtitulo"
-           data-es="Automatización para hogares, empresas y escuelas"
-           data-en="Automation for homes, businesses and schools">
-          Automatización para hogares, empresas y escuelas
-        </p>
- 
-        <h1 class="titulo-animado"
-            data-es="Soluciones inteligentes en seguridad y automatización."
-            data-en="Smart solutions in security and automation.">
-          Soluciones inteligentes en seguridad y automatización.
-        </h1>
- 
-        <p class="descripcion"
-           data-es="Instalamos timbres, cámaras y portones automatizados para brindarte mayor control, seguridad y comodidad en tiempo real."
-           data-en="We install smart doorbells, cameras and automated gates to give you greater control, security and real-time convenience.">
-          Instalamos timbres, cámaras y portones automatizados para brindarte mayor control, seguridad y comodidad en tiempo real.
-        </p>
- 
-        <a href="#contacto" class="btn"
-           data-es="Solicitá tu presupuesto"
-           data-en="Request a Quote">
-          Solicitá tu presupuesto
-        </a>
- 
-      </div>
-    </div>
-  </section>
- 
- 
   <!-- SERVICIOS -->
   <section id="caracteristicas" class="section">
     <div class="container">

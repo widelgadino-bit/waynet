@@ -10,6 +10,111 @@
  
 <body>
  
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+
+<script>
+// ============================
+// 1. ESCENA
+// ============================
+// crea el "mundo 3D"
+const scene = new THREE.Scene();
+
+// ============================
+// 2. CÁMARA
+// ============================
+// perspectiva: como ojo humano
+const camera = new THREE.PerspectiveCamera(
+  75, // ángulo de visión
+  window.innerWidth / window.innerHeight, // proporción pantalla
+  0.1, // cerca
+  1000 // lejos
+);
+
+// aleja la cámara para ver el objeto
+camera.position.z = 5;
+
+// ============================
+// 3. RENDERER (lo que dibuja)
+// ============================
+// crea el motor que dibuja el 3D en pantalla
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+// ============================
+// 4. LUZ
+// ============================
+// luz principal blanca suave
+const light = new THREE.PointLight(0x00ffff, 2);
+light.position.set(5, 5, 5);
+scene.add(light);
+
+// luz ambiente para suavizar sombras
+const ambient = new THREE.AmbientLight(0x222222);
+scene.add(ambient);
+
+// ============================
+// 5. OBJETO (chip simplificado)
+// ============================
+// forma base tipo "chip"
+const geometry = new THREE.BoxGeometry(2, 1, 0.3);
+
+// material con look tecnológico
+const material = new THREE.MeshStandardMaterial({
+  color: 0x111111,
+  metalness: 0.8,
+  roughness: 0.2
+});
+
+// crear el objeto 3D
+const chip = new THREE.Mesh(geometry, material);
+scene.add(chip);
+
+// ============================
+// 6. ROTACIÓN AUTOMÁTICA
+// ============================
+function animate() {
+  requestAnimationFrame(animate);
+
+  chip.rotation.x += 0.005;
+  chip.rotation.y += 0.01;
+
+  renderer.render(scene, camera);
+}
+animate();
+
+// ============================
+// 7. RESPONSIVE
+// ============================
+window.addEventListener("resize", () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ============================
+// 8. CONTROL CON MOUSE (simple)
+// ============================
+let isDragging = false;
+let previousX = 0;
+
+document.addEventListener("mousedown", (e) => {
+  isDragging = true;
+  previousX = e.clientX;
+});
+
+document.addEventListener("mouseup", () => {
+  isDragging = false;
+});
+
+document.addEventListener("mousemove", (e) => {
+  if (isDragging) {
+    const delta = e.clientX - previousX;
+    chip.rotation.y += delta * 0.01;
+    previousX = e.clientX;
+  }
+});
+</script>
   <!-- NAVBAR -->
   <header class="header">
     <div class="container nav-container">
